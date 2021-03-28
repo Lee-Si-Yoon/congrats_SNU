@@ -1,0 +1,69 @@
+@import "./reset.css";
+@import "./intro.css";
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Gothic A1', sans-serif;
+}
+body{
+  /*
+  overflow: hidden;
+  overflow-y: hidden;
+  */
+}
+
+input:invalid+span:after {
+  content: '✖';
+}
+input:valid+span:after {
+  content: '✓';
+}
+
+.scene__certificate{
+  height: 100vh;
+  width: 100vw;
+  background-color: grey;
+}
+.scene__certificate__text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.scene__certificate__text h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: left;
+  filter: drop-shadow(0 0 .3rem #333);
+}
+
+.scene__money{
+  height: 100vh;
+  width: 100vw;
+  background-color: tomato;
+}
+.scene__money__text{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.scene__money__text h1{
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: left;
+  filter: drop-shadow(0 0 .3rem #333);
+}
+.scene__video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.result{
+  height: 100vh;
+  width: 100vw;
+}

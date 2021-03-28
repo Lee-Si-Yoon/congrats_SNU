@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hilly_villy</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--INTRO-->
+    <section class="intro">
+      <div class="intro__container">
+        <h1>서울대학교 졸업을 진심으로 축하합니다</h1>
+        <h4>졸업증을 발부하기 위해 다음의 입력칸들을 채워주십시오</h4>
+        <form class="intro__form">
+          <p>성함을 입력해주십시오</p>
+          <input
+            type="text"
+            name="status"
+            id="username"
+            placeholder="ex) 이시윤"
+            required
+          />
+          <span class="validity"></span>
+          <p>등록학기수를 입력해주십시오</p>
+          <input
+            type="number"
+            name=""
+            id="usergrades"
+            min="1"
+            max="15"
+            step="1"
+            placeholder="ex) 8"
+            required
+          />
+          <span class="validity"></span>
+          <input type="submit" value="졸업하기" class="graduate__btn">
+        </form>
+      </div>
+    </section>
+    
+    <!--SECOND-->
+    <section class="scene__certificate">
+      <div class="scene__certificate__text">
+        <h1>이제 당신은 아주 이쁜 졸업증을 받게 됩니다</h1>
+        <div class="dimmer"></div>
+      </div>
+      <video src="./video/snu_certificate.mp4" class="scene__video"></video>
+    </section>
+    <section class="scene__money">
+      <div class="scene__money__text">
+        <h1></h1>
+      </div>
+      <video src="./video/snu_money.mp4" class="scene__video"></video>
+    </section>
+
+    <!--RESULT-->
+    <section class="result">
+      <input type="button" value="새로고침" onClick="refresh(this)">
+    </section>
+
+    <!--JAVASCRIPT-->
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.js"
+      integrity="sha512-UgS0SVyy/0fZ0i48Rr7gKpnP+Jio3oC7M4XaKP3BJUB/guN6Zr4BjU0Hsle0ey2HJvPLHE5YQCXTDrx27Lhe7A=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
+      integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js"
+      integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://pixijs.download/v6.0.0/pixi.min.js"></script>
+    <!--<script src="./js/live2d.js"></script>-->
+    <script src="./js/generate.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/intro.js"></script>
+  </body>
+</html>

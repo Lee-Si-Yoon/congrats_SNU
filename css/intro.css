@@ -1,0 +1,53 @@
+.intro{
+  width: 100vw;
+  height: 100vh;
+}
+.intro__container{
+  width: 60%;
+  height: auto;
+  padding: 40px 80px;
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 .5rem #333);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+.intro__form{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+.intro__form p{
+  margin-bottom: 12px;
+}
+.intro__form input{
+  width: 100%;
+  height: 2rem;
+  margin-bottom: 3px;
+}
+.intro__form span{
+  margin-bottom: 10px;
+}
+.intro__container h1{
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.intro__container h4{
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.graduate__btn{
+  height: 2.5rem !important; 
+  border: none;
+  background-color: #104ea9;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
