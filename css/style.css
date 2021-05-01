@@ -8,10 +8,10 @@
   font-family: 'Gothic A1', sans-serif;
 }
 body{
-  /*
+  
   overflow: hidden;
   overflow-y: hidden;
-  */
+  
 }
 
 input:invalid+span:after {
