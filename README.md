@@ -1,2 +1,2 @@
-# congrats_SNU
- 
+# snu_graduation
+ let's graduate

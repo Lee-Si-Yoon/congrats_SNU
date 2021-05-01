@@ -16,7 +16,7 @@ const totalDudes = 30;
 
 for (let i = 0; i < totalDudes; i++) {
   // create a new Sprite that uses the image name that we just generated as its source
-  const dude = PIXI.Sprite.from("../img/dudes/top_dude.png");
+  const dude = PIXI.Sprite.from("img/dudes/top_dude.png");
 
   // set the anchor point so the texture is centerd on the sprite
   dude.anchor.set(0.5);

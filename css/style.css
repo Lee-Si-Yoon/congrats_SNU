@@ -1,5 +1,6 @@
 @import "./reset.css";
 @import "./intro.css";
+@import "./scene.css";
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 *{
@@ -20,50 +21,138 @@ input:valid+span:after {
   content: '✓';
 }
 
-.scene__certificate{
-  height: 100vh;
-  width: 100vw;
-  background-color: grey;
-}
-.scene__certificate__text{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-}
-.scene__certificate__text h1{
-  color: white;
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: left;
-  filter: drop-shadow(0 0 .3rem #333);
-}
-
-.scene__money{
-  height: 100vh;
-  width: 100vw;
-  background-color: tomato;
-}
-.scene__money__text{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-}
-.scene__money__text h1{
-  color: white;
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: left;
-  filter: drop-shadow(0 0 .3rem #333);
-}
-.scene__video{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 .result{
-  height: 100vh;
+  height: 150vh;
   width: 100vw;
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.result__container{
+  width: 70%;
+  height: auto;
+  background-color: white;
+  filter: drop-shadow(0 0 .3rem rgba(0,0,0,0.2));
+  padding: 80px;
+  border-radius: 15px;
+}
+.result__user{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.result__user h1{
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgba(151, 163, 175, 1);
+  letter-spacing: 1rem;
+  margin-bottom: 50px;
+}
+.result__user h2{
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: .4rem;
+  margin-bottom: 12px;
+}
+.result__user span{
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.result__content{
+  margin-bottom: 100px;
+}
+.result__content p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 200%;
+  text-align: center;
+}
+.result__time{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.result__cert1{
+  display: flex;
+  margin-bottom: 50px;
+}
+.result__cert1__null{
+  flex: 0 80%;
+}
+.result__cert1__name{
+  width: 100px;
+  padding-top: 55px;
+}
+.result__cert1__name p{
+  margin-bottom: 10px;
+}
+.result__cert1__name span{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.result__p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.result__cert2{
+  display: flex;
+  margin-bottom: 50px;
+  position: relative;
+}
+.result__cert2__null{
+  flex: 0 80%;
+}
+.result__cert2__name{
+  width: 100px;
+  padding-top: 40px;
+}
+.result__cert2__name p{
+  margin-bottom: 10px;
+}
+.result__cert2__name span{
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: right;
+}
+.result__cert2 img:first-child{
+  position: absolute;
+  bottom: -60px;
+  height: 330px;
+  width: auto;
+}
+
+.result__key{
+  font-size: .7rem;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: -20px;
+}
+
+.cert__img{
+  height: 100px;
+  width: auto;
+  margin-left: 10px;
+}
+.result__btn{
+  width: 50%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.result__btn input{
+  border: none;
+  padding: 10px 30px;
+  background-color: #104ea9;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
+  cursor: pointer;
 }
